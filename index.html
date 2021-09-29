@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/src/index.css">
+   
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/src/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="76x76" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="lmages/favicon-16x16.png">
+    <link rel="manifest" href="lmages/site.webmanifest">
+    <link rel="mask-icon" href="lmages/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <script src="https://kit.fontawesome.com/db92c6086b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+
+
+    <title>flowers</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <section id="banner">
+      <nav class="navbar" >
+          <div class="hamburger-menu" for="opensidemenu" id="opensidemenu" onclick="toggleclick()">
+            <div class="line line-1"></div>
+            <div class="line line-2"></div>
+            <div class="line line-3"></div>
+          </div>
+
+
+          <div class="logoword">
+              <li><img src="images/up-icon.png">Flowers</li>
+          </div>
+          <div class="mainmenu">
+              <ul id="menu">
+                  <li><a href="">Home</a></li>
+                  <li><a href="">Gallary</a>
+                      <ul>
+                          <li><a href="">flowers</a></li>
+                          <li><a href="">plants</a></li>
+                          <li><a href="">gift baskets</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="">occasions</a>
+                      <ul>
+                          <li><a href="">birthday</a></li>
+                          <li><a href="">anniversary</a></li>
+                          <li><a href="">sympathy</a></li>
+                          <li><a href="">fastival<i class="fa fa-angle-right"></i></a>
+                              <div class="fastival">
+                                  <ul>
+                                      <li><a href="#">holi</a></li>
+                                      <li><a href="#">rakhi</a></li>
+                                      <li><a href="#">janmasshtami</a></li>
+                                      <li><a href="#">navratri</a></li>
+                                      <li><a href="#">dussehra</a></li>
+                                      <li><a href="#">karwa chauth</a></li>
+                                      <li><a href="#">diwali</a></li>
+                                      <li><a href="#">bhai dooj</a></li>
+                                      <li><a href="#">christmas</a></li>
+                                      <li><a href="#">good friday</a></li>
+                                      <li><a href="#">easter</a></li>
+                                  </ul>
+                              </div>
+                          </li>
+                          <li><a href="">special occasions<i class="fa fa-angle-right"></i></a>
+                              <div class="special">
+                                  <ul>
+                                      <li><a href="#">party</a></li>
+                                      <li><a href="#">ceremony</a></li>
+                                      <li><a href="#">event</a></li>
+                                      <li><a href="#">celebration</a></li>
+                                  </ul>
+                              </div>
+                          </li>
+                      </ul>
+                  </li>
+                  <li><a href="">Contact</a>
+                      <ul>
+                          <li><a href="">Online</a></li>
+                          <li><a href="">Right Here</a></li>
+                          <li><a href="">Somewhere Else</a></li>
+                      </ul>
+                  </li>
+              </ul>
+          </div>
+
+          <div class="topnav">
+              <input type="text" placeholder="Search.."></div>
+          </div>
+      </nav>
+      <div class="sidebarmenu" style="display: block;">
+          <ul class="sidemenu">
+              <li> <a href="/signInForm.html">sign in</a></li>
+              <li> <a href="#">about us</a></li>
+              <li> <a href="#">Gallary</a></li>
+              <li> <a href="#">contact</a></li>
+              <li> <a href="#">your oder(cart)</a></li>
+          </ul>
+      </div>
+
+      <div class="heading">
+          <h1>Bansi Lal </h1>
+          <P>Florist</P>
+      </div>
+  </section>
+
+    <div class="container" style="background-color: rgb(150, 161, 161);">
+      <div class="cards">
+        <div class="image1" >
+             <img src="images/flower1.jpg" id="img">
+        </div>
+        <h1 class="flowrtitle" id="title">
+            Backyard2
+        </h1>
+        <div class="price" id="price"> <span>$600</span></div>
+        <div class="button" id="btn" ><button onclick="addtocart">Add To Cart</button></div>
+    </div>
+    <!-- card2-->
+    <div class="cards">
+        <div class="image1">
+            <img src="images/flower10.jpg">
+        </div>
+        <h1 class="flowrtitle">
+            Backyard
+        </h1>
+        <div class="price"> <span>$600</span></div>
+        <div class="button"><button>oder</button></div>
+    </div>
+    <!--card3-->
+    <div class="cards">
+      <div class="image1">
+          <img src="images/flower3.jpg">
+      </div>
+      <h1 class="flowrtitle">
+          Backyard
+      </h1>
+      <div class="price"> <span>$600</span></div>
+      <div class="button"><button>oder</button></div>
+  </div>
+  <!--card4-->
+
+  <div class="cards">
+      <div class="image1">
+          <img src="images/flower4.jpg">
+      </div>
+      <h1 class="flowrtitle">
+          Backyard
+      </h1>
+      <div class="price"> <span>$600</span></div>
+      <div class="button"><button>oder</button></div>
+  </div>
+
+  <!--card5-->
+
+  <div class="cards">
+      <div class="image1">
+          <img src="images/flower9.jpg">
+      </div>
+      <h1 class="flowrtitle">
+          Backyard
+     </h1>
+      <div class="price"> <span>$600</span></div>
+      <div class="button"><button>oder</button></div>
+  </div>
+
+
+  <!--card6-->
+
+  <div class="cards">
+      <div class="image1">
+          <img src="images/flower6.jpg">
+      </div>
+      <h1 class="flowrtitle">
+          Backyard
+      </h1>
+      <div class="price"> <span>$600</span></div>
+      <div class="button"><button>oder</button></div>
+  </div>
+
+
+  <!--card7-->
+
+  <div class="cards">
+      <div class="image1">
+          <img src="images/flower7.jpg">
+      </div>
+      <h1 class="flowrtitle">
+          Backyard
+      </h1>
+      <div class="price"> <span>$600</span></div>
+      <div class="button"><button>oder</button></div>
+  </div>
+  <!--card8-->
+
+  <div class="cards">
+      <div class="image1">
+          <img src="images/flower8.jpg">
+      </div>
+      <h1 class="flowrtitle">
+          Backyard
+      </h1>
+      <div class="price"> <span>$600</span></div>
+      <div class="button"><button>oder</button></div>
+  </div>
+  <!--card9-->
+
+  <div class="cards">
+      <div class="image1">
+          <img src="images/flower5.jpg">
+      </div>
+      <h1 class="flowrtitle">
+          Backyard
+      </h1>
+      <div class="price"> <span>$600</span>
+      </div>
+      <div class="button"><button>oder</button></div>
+  </div>
+  <!--card10-->
+
+  <div class="cards">
+      <div class="image1">
+          <img src="images/flower2.jpg">
+      </div>
+      <h1 class="flowrtitle">
+          Backyard
+      </h1>
+      <div class="price"> <span>$600</span></div>
+      <div class="button"><button>oder</button></div>
+  </div>
+  <!--card11-->
+
+  <div class="cards">
+      <div class="image1">
+          <img src="images/flower11.jpg">
+      </div>
+      <h1 class="flowrtitle">
+          Backyard
+      </h1>
+      <div class="price"> <span>$600</span></div>
+      <div class="button"><button>oder</button></div>
+  </div>
+  <!--card12-->
+
+  <div class="cards">
+      <div class="image1">
+          <img src="images/flower12.jpg">
+      </div>
+      <h1 class="flowrtitle">
+          Backyard
+      </h1>
+      <div class="price"> <span>$600</span>
+      </div>
+      <div class="button"><button>oder</button></div>
+  </div>
+
+
+
+    </div>
+    <script src="/app.js"></script>
+  </body>
+</html>

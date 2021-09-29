@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="signIN.CSS">
+   
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/src/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="76x76" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="lmages/favicon-16x16.png">
+    <link rel="manifest" href="lmages/site.webmanifest">
+    <link rel="mask-icon" href="lmages/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <script src="https://kit.fontawesome.com/db92c6086b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <title>SIGN IN</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+<div class="form-box">
+    <h1>SIGN IN </h1>
+   <div class="input-box">
+    <i class="far fa-envelope"></i>
+       <input type="email" placeholder="email id" ">
+   </div>
+   <div class="input-box">
+    <i class="fas fa-key"></i>
+       <input type="password" placeholder="password" id="myinpute">
+       <span class="eye" onclick="myFunction()"> <i id="hide2" class="fas fa-eye-slash"></i>
+       <i  id="hide1" class="fas fa-eye"></i>
+      </span>
+   </div>
+   <button type="button" class="signinbtn" onclick="style">SIGN IN</button>
+</div>
+<script>
+    function myFunction(){
+        var x = document.getElementById("myinpute");
+        var y = document.getElementById("hide1");
+        var z = document.getElementById("hide2");
+        if(x.type === 'password'){
+            x.type = "text";
+            y.style.display = "block";
+            z.style.display = "none";
+        }
+        else{
+            x.type = "password";
+            y.style.display = "none";
+            z.style.display = "block";
+        }
+    }
+    $(document).ready(function(){
+        $('.signinbtn').click(function(){
+            $(this).css({"background" : "black" ,
+            "color":"white",
+            "transition": ".5s"})
+        })
+    })
+
+</script>
+
+
+    <script src="/app.js"></script>
+  </body>
+</html>
